@@ -37,7 +37,7 @@ Funcionamiento:
 
 Parametrizacion:
 
--El script posee un archivo para la parametrizacion de ciertos datos que pueden especificarse. Este es nombrado "config.env" y posee los siguientes parametros:
+- El script posee un archivo para la parametrizacion de ciertos datos que pueden especificarse. Este es nombrado "config.env" y posee los siguientes parametros:
 
 #Parametros generales del script
 VERBOSE_MODE = (Se completa con un valor booleano True|False, y se utilizar para mostrar la salida del SQLACHEMY)
@@ -62,7 +62,7 @@ DB_SCHEMA= (Nombre del esquema dentro de la DB donde se trabajara)
 
 ========================================================================================
 
-Mejoras en las cuales se encuentran actualmente trabajando para la version 2
+Mejoras en las cuales se encuentran actualmente trabajando para la version 2:
 
 
 - Creacion de una tabla donde se puedan almacenar distintos datos de ubicaciones para luego recorrerlos en loop y poder recuperar historicos de clima de distintos lugares especificos.
