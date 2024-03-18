@@ -14,7 +14,7 @@ def rutaActual():
     return pathlib.Path(__file__).parent.absolute()
 
 
-def getWeather(coor, date_from, date_to):
+def getWeatherHistory(coor, date_from, date_to):
     try:
         url_data = (
             "https://api.open-meteo.com/v1/forecast?latitude="

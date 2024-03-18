@@ -68,7 +68,7 @@ logger.info("Date To: " + date_to)
 
 # ==================================================
 
-dataGet = getWeather(coor, date_from, date_to)
+dataGet = getWeatherHistory(coor, date_from, date_to)
 
 if dataGet["result"] == False:
     logger.error(dataGet["response"])
