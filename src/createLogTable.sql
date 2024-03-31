@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS mansilla_maximiliano_coderhouse.logs_weather
+CREATE TABLE IF NOT EXISTS XXXXXXXXX.logs_weather
 (
 	datetime_reg TIMESTAMP WITHOUT TIME ZONE
 	,coor_lat VARCHAR(256)

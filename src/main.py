@@ -12,7 +12,6 @@ import os
 import logging
 import sys
 from sqlalchemy import create_engine
-import time
 from datetime import datetime, timedelta
 
 # ======CUSTOMIZACION============
@@ -26,7 +25,8 @@ verbose_mode = bool(os.getenv("VERBOSE_MODE"))
 
 url_coor_lat = os.getenv("URL_COOR_LAT")
 url_coor_lon = os.getenv("URL_COOR_LON")
-url_days_before = os.getenv("URL_DAYS_BEFORE")
+url_to_days_before = os.getenv("URL_TO_DAYS_BEFORE")
+url_from_days_before = os.getenv("URL_FROM_DAYS_BEFORE")
 
 db_host = str(os.getenv("DB_HOSTNAME"))
 db_port = str(os.getenv("DB_PORT"))
@@ -56,8 +56,8 @@ logger.info("Se configuro el LOGGING")
 
 # ==============SET VARS=========================
 coor = [url_coor_lat, url_coor_lon]
-date_from = (datetime.now() - timedelta(int(url_days_before))).strftime("%Y-%m-%d")
-date_to = (datetime.now() - timedelta(1)).strftime("%Y-%m-%d")
+date_from = (datetime.now() - timedelta(int(url_from_days_before))).strftime("%Y-%m-%d")
+date_to = (datetime.now() - timedelta(int(url_to_days_before))).strftime("%Y-%m-%d")
 
 # =======================================
 logger.info("Getting Weather Data")
